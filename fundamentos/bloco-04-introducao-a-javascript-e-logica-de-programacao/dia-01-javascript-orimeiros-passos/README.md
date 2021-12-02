@@ -4,7 +4,7 @@ Nos exercícios de hoje, você vai fazer quinze pequenos programas. Todos trabal
 
 ###Exercícios:
 
-1-Faça cinco programas, um para cada operação aritmética básica. Seu programa deve ter duas constantes, a e b , definidas no começo com os valores que serão operados. Faça programas para:
+1- Faça cinco programas, um para cada operação aritmética básica. Seu programa deve ter duas constantes, a e b , definidas no começo com os valores que serão operados. Faça programas para:
 Adição (a + b)
 Subtração (a - b)
 Multiplicação (a * b)
@@ -12,25 +12,16 @@ Divisão (a / b)
 Módulo (a % b)
 [Arquivo html desta atividade](exercicio1.js)
 
-###Parte prática - HTML - Links externos e internos:
-1 - Crie um parágrafo para cada pessoa da sua lista.
-2 - Crie um link entre a sua lista e os parágrafos de pessoas.
-3 - Crie um link para a página do Google.
-[Arquivo html desta atividade](index.html)
+2- Faça um programa que retorne o maior de dois números. Defina no começo do programa duas constantes com os valores que serão comparados.
+[Arquivo html desta atividade](exercici2.js)
 
+3- Faça um programa que retorne o maior de três números. Defina no começo do programa três constantes com os valores que serão comparados.
+[Arquivo html desta atividade](exercicio3.js)
 
-- Criar seu Portfólio Web usando todo o aprendizado que você construiu hoje;
-- Hospedar seu Portfólio Web no GitHub Pages .
+4- Faça um programa que, dado um valor definido numa constante, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário.
+[Arquivo html desta atividade](exercicio4.js)
 
-Requisitos
-- Seu Portfólio Web deve ter as seguintes informações:
-- Seu nome completo;
-- Uma foto atual sua, acompanhada de um texto alternativo, que deve ser a descrição da foto que você está usando;
-- Uma breve descrição sobre você, destacando algumas informações como nacionalidade e a cidade/estado onde mora;
-- Uma lista de habilidades que você possui, com destaque para aquela de que você mais se orgulha;
-- Um link interno para a sua foto;
-- Um link externo para algum blog de que você goste, que abra em uma nova aba;
-- Partes do seu portfólio destacadas com negrito e/ou itálico;
-- Um índice com links internos para as diferentes seções do seu portfólio.
-[Arquivo html desta atividade](https://github.com/evandrvalente/evandrvalente.github.io)
-
+5- Faça um programa que defina três constantes com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false , caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.
+-Para os ângulos serem de um triângulo válido, a soma dos três devem ser 180 graus.
+-Um ângulo será considerado inválido se não tiver um valor positivo.
+[Arquivo html desta atividade](exercicio5.js)
