@@ -1,12 +1,16 @@
 # DIA 1
 
-O objetivo dos exercícios desse dia foi aprender como utilizar HTML para estruturar páginas web:
+Nos exercícios de hoje, você vai fazer quinze pequenos programas. Todos trabalham a lógica condicional ( if/else e switch/case ), operadores aritméticos ( + , - , * , / , % ) e operadores lógicos ( > , < , && , || ). 
 
-###Parte prática - HTML - Primeiras tags:
-1 - Crie uma lista das pessoas que você já fez amizade na Trybe.
-2 - Adicione uma imagem que venha de uma URL externa.
-3 - Adicione uma imagem que está no seu computador, local.
-[Arquivo html desta atividade](index.html)
+###Exercícios:
+
+1-Faça cinco programas, um para cada operação aritmética básica. Seu programa deve ter duas constantes, a e b , definidas no começo com os valores que serão operados. Faça programas para:
+Adição (a + b)
+Subtração (a - b)
+Multiplicação (a * b)
+Divisão (a / b)
+Módulo (a % b)
+[Arquivo html desta atividade](exercicio1.js)
 
 ###Parte prática - HTML - Links externos e internos:
 1 - Crie um parágrafo para cada pessoa da sua lista.
@@ -14,7 +18,7 @@ O objetivo dos exercícios desse dia foi aprender como utilizar HTML para estrut
 3 - Crie um link para a página do Google.
 [Arquivo html desta atividade](index.html)
 
-###Exercícios
+
 - Criar seu Portfólio Web usando todo o aprendizado que você construiu hoje;
 - Hospedar seu Portfólio Web no GitHub Pages .
 
