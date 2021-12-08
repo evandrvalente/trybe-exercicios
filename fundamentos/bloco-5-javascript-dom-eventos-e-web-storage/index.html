@@ -58,6 +58,13 @@
         textTwoYears.innerText = "Daqui a dois anos eu espero estar rico";
         document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109)';
         document.getElementsByTagName('section')[0].style.backgroundColor = 'white';
+        document.getElementsByClassName('title')[0].innerText = 'Exercício 5.1 - JavaScript';
+        textTwoYears.innerText = textTwoYears.innerText.toUpperCase();
+    
+        let paragraphs = document.getElementsByTagName('p');
+        for (let index = 1; index < paragraphs.length; index++) {
+            console.log(paragraphs[index].innerHTML);
+        }
     </script>
   </body>
 </html>
