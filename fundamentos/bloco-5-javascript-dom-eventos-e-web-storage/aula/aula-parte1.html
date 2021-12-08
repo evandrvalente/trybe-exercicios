@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph" class="book">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph" class="preferences">Segundo parágrafo!</p>
+    </header>
+    <script>
+        const title = document.getElementsByTagName("h2");
+        const subt = document.getElementsByTagName('h4');
+        const second = document.getElementById("second-paragraph");
+        const paragraph = document.getElementById("paragraph");
+        paragraph.style.color = "blue";
+        second.style.color = "green";
+        paragraph.innerText = 'Meu livro favorito no momento é Historia da humanidade, do Harari'
+        second.innerHTML = "Meu segundo filme favorito é Matrix";
+        title[0].innerText = 'Livro preferido';
+        subt[0].innerText = 'Segundo filme preferido';
+        const estilop = document.getElementsByClassName('preferences');
+        estilop[0].style.color = 'red';
+        document.querySelectorAll(".book")[0].innerText = "oxe";
+    </script>
+  </body>
+</html>
