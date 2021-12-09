@@ -65,3 +65,19 @@ git remote -v
 
 //enviando alterações locais para o repositório remoto
 git push origin master
+
+
+//criar um arquivo de teste, comitar e sincronizar com repositório remoto
+cat > trybe-skills.txt
+O que eu vou aprender na Trybe:
+- Unix
+- Bash
+- Git
+^C
+
+cd ..
+git add .
+git commit -m "Initial commit"
+git push
+
+
