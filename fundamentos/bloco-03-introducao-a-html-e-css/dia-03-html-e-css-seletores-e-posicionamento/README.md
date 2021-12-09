@@ -39,17 +39,20 @@ A fonte do item mude quando ele for clicado.
 
 ###Exercícios
 
-Vamos continuar com a criação do seu Portfólio Web! Hoje é o segundo dia utilizando o GitHub Pages, então lembre-se: o processo de versionamento é relativamente diferente do restante dos exercícios do curso.
-Agora é hora de estilizar tudo que você aprendeu! Com este exercício, você será capaz de:
-- Estilizar seu Portfólio Web usando todo o conhecimento que você construiu hoje;
+Hoje vamos finalizar a primeira versão do seu Portfólio Web adicionando seletores e CSS de layout. Sendo assim, hoje também será o último dia trabalhando com um fluxo de versionamento diferente do habitual do curso, no GitHub.
+Os ojetivos deste exercício são:
+- Aplicar layout mais consistente usando elementos de bloco e inline , aplicando todo o conhecimento que você construiu hoje;
+- Salvar todas as estilizações dentro de um arquivo externo style.css ;
+- Usar Box Model para organizar melhor os elementos no seu Portfólio Web ;
 - Atualizar seu Portfólio Web no GitHub Pages .
 
 Requisitos
 Seu Portfólio Web deve ser estilizado usando as informações a seguir:
-- Defina fontes diferentes para o seu nome e para a descrição que você criou;
-- Defina uma cor base de background do seu Portfólio Web ;
-- Altere o estilo das tags que você usou para destacar algumas informações, como sua nacionalidade e a cidade/estado onde mora;
-- Coloque tamanhos diferentes para os elementos da lista de habilidades que você criou. Lembre-se de usar classes para cada um dos elementos;
+- Coloque seu nome, sua foto e a descrição que você escreveu sobre você dentro de blocos;
+- A descrição deve ficar ao lado da foto;
+- Centralize seu nome na página;
+- Use padding e coloque uma cor de fundo na sua foto que seja diferente da cor de fundo do resto da página;
+- Adicione margin e padding nos elementos que julgar necessário;
+- Coloque estilo somente nos itens ímpares da lista das suas habilidades.
 
 [Arquivo html desta atividade](https://github.com/evandrvalente/evandrvalente.github.io)
-
