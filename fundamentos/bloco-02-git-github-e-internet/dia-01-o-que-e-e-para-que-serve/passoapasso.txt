@@ -1,0 +1,83 @@
+//Instalação do Git (via comandos no terminal)
+sudo apt-get install git-all
+
+//Configuração do Git
+git config --global user.name "Evandro Valente"
+git config --global user.email evandr.valente@gmail.com
+
+//Configurar um editor para poder acessar e alterar o arquivo de configuração do Git , .gitconfig
+git config --global core.editor "code --wait"
+
+//Verificar satus da instalação e configuração
+git --version 
+git config --list
+
+//Gerando uma chave SSH para utilizar com  minha conta do GitHub
+ssh-keygen -t rsa -b 4096 -C "evandr.valente@gmail.com"
+
+//Adicionando sua chave SSH ao ssh-agent
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+
+//Copiando a chave gerada para utilização no GitHub
+xclip -sel clip < ~/.ssh/id_rsa.pub
+
+//Adicionando a chave SSH gerada na minha conta do GitHub (via navegador)
+Entrar no GitHub
+No canto superior direito do GitHub , entrar em Settings ;
+Na barra lateral esquerda, clicar em SSH and GPG keys ;
+Clicar em New SSH key ou Add SSH key ;
+No campo Título , adicionar uma descrição para a nova chave;
+Colar  dentro do campo Key a chave que foi gerada;
+Clicar em Add SSH key ;
+
+// Criar repositorio local (via comandos no terminal)
+
+-criar um diretórip e iniciar um repositório local dentro dele
+mkdir trybe-exercicios
+cd trybe-exercicios
+git init
+
+-verificar se o repositório foi iniciado
+git status
+
+-criar arquivos e comitar
+mkdir fundamentos
+cd fundamentos
+mkdir bloco-02-git-github-e-internet
+cd bloco-02-git-github-e-internet
+mkdir 
+cat > meu_arquivo.txt
+Meu primeiro repositório Git.
+^C
+cd ~/trybe-exercicios
+git status
+git add .
+git commit -m "Cria arquivo meu_arquivo.txt" 
+
+//Criado [repositório remoto no Github](via navegador de internet em https://github.com/evandrvalente/trybe-exercicios)
+
+//Conectando o repositório local com o remoto (via comandos no terminal)
+git remote add origin <url gerada pelo meu repositorio remoto>
+
+ //checar se a conexão inicial funcionou
+git remote -v
+
+//enviando alterações locais para o repositório remoto
+git push origin master
+
+
+//criar um arquivo de teste, comitar e sincronizar com repositório remoto
+cat > trybe-skills.txt
+O que eu vou aprender na Trybe:
+- Unix
+- Bash
+- Git
+^C
+
+cd ..
+git add .
+git commit -m "Initial commit"
+git push
+
+
