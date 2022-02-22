@@ -1,46 +1,28 @@
-const jsonInfo = `{
-  "muitasEmpresasUsam": [
-    "Google",
-    "Twitter",
-    "Facebook",
-    "etc..."
-  ],
-  "temVariasVantagens": [
-    "Legível",
-    "Fácil de usar",
-    "Leve",
-    "Popular",
-    "Versátil"
-  ],
-  "muitasLinguagensDaoSuporte": [
-    "Python",
-    "C",
-    "C++",
-    "Java",
-    "PHP"
-  ]
-}`;
+const url = 'https://api.coincap.io/v2/assets';
 
-const usoJSONPorque = JSON.parse(jsonInfo);
+async function getCryptos() {
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data)
+    return data
+  } catch(error) {
+   console.log(`Algo deu errado :( \n${error}`);
+  }
+}
 
-const corporationsList = document.getElementById('corporations-used-by');
-const advantagesList = document.getElementById('advantages');
-const languagesList = document.getElementById('languages-used-by');
 
-usoJSONPorque.muitasEmpresasUsam.map((empresa) => {
+//colocar o objeto retornado em cryptoJSON
+
+const cryptoJSON = getCryptos();
+
+const contentList = document.getElementById('crypto-list');
+
+const createList = () => {
+  cryptoJSON.map((cryptoInfo) => {
+  //expect = "Nome da moeda (símbolo da moeda): valor em dólares"
   const newLi = document.createElement('li');
-  newLi.innerText = empresa;
-  corporationsList.appendChild(newLi);
+  newLi.innerText = `${cryptoInfo.name}(${cryptoInfo.synbol}): ${cryptoInfo.priceUSD}`;
+  contentList.appendChild(newLi);
 });
-
-usoJSONPorque.temVariasVantagens.map((vantagens) => {
-  const newLi = document.createElement('li');
-  newLi.innerText = vantagens;
-  advantagesList.appendChild(newLi);
-});
-
-usoJSONPorque.muitasLinguagensDaoSuporte.map((linguagens) => {
-  const newLi = document.createElement('li');
-  newLi.innerText = linguagens;
-  languagesList.appendChild(newLi);
-});
+}
