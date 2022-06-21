@@ -12,5 +12,8 @@
     "script"
   ],
   "author": "Evandro Valente",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
