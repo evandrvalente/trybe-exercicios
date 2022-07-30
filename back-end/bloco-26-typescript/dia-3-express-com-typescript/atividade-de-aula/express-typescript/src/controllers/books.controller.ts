@@ -5,6 +5,12 @@ import BookService from '../services/books.service';
 class BooksController {
   constructor(private bookService = new BookService()) { }
 
+  public create = async (req: Request, res: Response) => {
+    const book = req.body;
+    const bookCreated = await this.bookService.create(book);
+    res.status(StatusCodes.CREATED).json(bookCreated);
+  };
+
   public getAll = async (_req: Request, res: Response) => {
     const books = await this.bookService.getAll();
     res.status(StatusCodes.OK).json(books);

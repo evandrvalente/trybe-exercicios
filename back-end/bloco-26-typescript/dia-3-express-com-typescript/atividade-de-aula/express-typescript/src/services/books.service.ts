@@ -9,6 +9,10 @@ class BookService {
     this.model = new BookModel(connection);
   }
 
+  public create(book: Book): Promise<Book> {
+    return this.model.create(book);
+  }
+  
   public async getAll(): Promise<Book[]> {
     const books = await this.model.getAll();
     return books;
