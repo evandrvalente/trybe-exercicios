@@ -26,7 +26,7 @@ class BooksController {
     }
 
     res.status(StatusCodes.OK).json(book);
-  }
+  };
 
   public update = async (req: Request, res: Response) => {
     const id = Number(req.params.id);
@@ -34,6 +34,13 @@ class BooksController {
     await this.bookService.update(id, book);
 
     res.status(StatusCodes.NO_CONTENT).end();
+  };
+
+  public remove = async (req: Request, res: Response) => {
+    const id = Number(req.params.id);
+    await this.bookService.remove(id);
+
+    res.status(StatusCodes.OK).json({ message: 'Book deleted successfully' });
   };
 }
 
